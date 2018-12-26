@@ -1,0 +1,13 @@
+.content-wrapper {
+  min-height: 100vh !important;
+}
+
+.header {
+  padding: 0 !important;
+  width: 100%;
+}
+
+.content {
+  padding-top: 0;
+  margin: 24px;
+}

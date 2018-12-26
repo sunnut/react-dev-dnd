@@ -1,0 +1,171 @@
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    padding: 8px 0;
+    color: #fff;
+    background: #20232a;
+}
+
+.header-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-wrapper header {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: left;
+}
+
+.header-wrapper header a {
+    display: flex;
+    height: 34px;
+    align-items: center;
+    border: 0;
+    color: #fff;
+    flex-flow: row nowrap;
+}
+
+.header-wrapper header img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.header-wrapper header h2 {
+    display: block;
+    position: relative;
+    line-height: 18px;
+    margin: 0;
+    font-size: 1.25em;
+    white-space: nowrap;
+}
+
+.nav-wrapper {
+    position: relative;
+    height: 34px;
+    margin-left: auto;
+}
+
+.nav-wrapper nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-wrapper nav {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+}
+
+.nav-wrapper nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    background: #61dafb;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-wrapper nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background: none;
+    }
+}
+
+.nav-wrapper nav ul li {
+    flex: 1 1 auto;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-wrapper nav ul li a {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: .9em;
+    height: 50px;
+    justify-content: center;
+    transition: background-color .3s;
+}
+
+.nav-wrapper nav ul li a:hover {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-wrapper nav ul li a {
+        display: flex;
+        margin: 0;
+        padding: 6px 10px;
+        height: 32px;
+        line-height: 1.2em;
+        border: 0;
+        color: hsla(0,0%,100%,.8);
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -250px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    color: #EEE;
+}
+
+.login-form h3 {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 35px 0;
+    text-align: center;
+    font: 20px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei",sans-serif;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-size: 12px;
+    line-height: 70px;
+    color: #999;
+    text-align: center;
+    clear: both;
+}
