@@ -73,3 +73,7 @@ ol, ul {
 .ant-dropdown-menu-item {
   min-width: 160px;
 }
+
+.antd-pro-charts-timeline-chart-timelineChart {
+  margin-top: -22px;
+}

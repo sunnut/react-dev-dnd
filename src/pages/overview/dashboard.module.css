@@ -1,0 +1,25 @@
+.toolbar-wrapper {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e6e9ed;
+    background-color: #ffffff;
+  }
+  
+  .toolbar {
+    align-items: center;
+  }
+  
+  .toolbar i {
+    display: inline-block;
+    margin: 0 6px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .toolbar i:hover {
+    border: 1px solid #e6e9ed;
+  }
