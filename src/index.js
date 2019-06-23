@@ -43,7 +43,7 @@ if (language === 'zh') {
 
 ReactDOM.render(
   <IntlProvider locale={locale} messages={messages}>
-    <LocaleProvider locale={zh_CN}>
+    <LocaleProvider locale={localAntD}>
       <Provider store={store}>
         <BrowserRouter>
           <App />

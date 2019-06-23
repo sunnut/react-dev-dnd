@@ -1,5 +1,5 @@
 import React from 'react';
-import { MiniBar } from 'ant-design-pro/lib/Charts';
+import { MiniArea } from 'ant-design-pro/lib/Charts';
 import moment from 'moment';
 
 const visitData = [];
@@ -14,7 +14,7 @@ for (let i = 0; i < 20; i += 1) {
 const LineComponent = (props) => {
     return (
         <>
-            <MiniBar height={45} data={visitData} />
+            <MiniArea line height={45} data={visitData} />
         </>
     );
 };

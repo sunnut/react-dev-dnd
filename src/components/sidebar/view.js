@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import data from './data';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Icon, Menu } from 'antd';
 import styles from './sidebar.module.css';
 import logo from '../../assets/images/logo.svg';
 const { SubMenu } = Menu;
 
-const Sidebar = ({collapsed}) => {
+const Sidebar = ({data, collapsed}) => {
   const [current, setCurrent] = useState('overview');
 
   return (
@@ -57,4 +57,9 @@ const Sidebar = ({collapsed}) => {
   );
 };
 
-export default Sidebar;
+const mapStateToProps = (state, props) => ({
+  data: state.sidebar,
+  collapsed: props.collapsed
+});
+
+export default connect(mapStateToProps)(Sidebar);

@@ -38,7 +38,7 @@ const formItemLayout = {
 const OverviewComponent = (props) => {
   // 页面ID
   let pageName = props.match.params.id;
-  let currentPanelId;
+  //let currentPanelId;
   const [visible, setVisible] = useState(false);
   const [panelList, setPanelList] = useState([]);
 
@@ -47,19 +47,19 @@ const OverviewComponent = (props) => {
       setTimeout(() => {
         setPanelList([{
           id: 'b',
-          title: '请求成功率',
+          title: '折线图',
           type: 'line-chart',
           sql: '123',
           gridPos: {x: 0, y: 0, w: 8, h: 8}
         }, {
           id: 'a',
-          title: 'B2B每秒请求数',
+          title: '柱状图',
           type: 'bar-chart',
           sql: '123',
           gridPos: {x: 8, y: 0, w: 8, h: 8}
         }, {
           id: 'c',
-          title: '错误码',
+          title: '饼图',
           type: 'pie-chart',
           sql: '123',
           gridPos: {x: 16, y: 0, w: 8, h: 8}
@@ -133,8 +133,8 @@ const OverviewComponent = (props) => {
   //================================================================
   const editPanel = function(e) {
     e.preventDefault();
-    let targetEle = getEventTarget(e);
-    currentPanelId = targetEle.getAttribute('data-id');
+    //let targetEle = getEventTarget(e);
+    //currentPanelId = targetEle.getAttribute('data-id');
     setVisible(true);
     return false;
   };

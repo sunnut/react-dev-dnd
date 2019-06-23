@@ -3,11 +3,12 @@ import thunk from 'redux-thunk';
 import { routerReducer } from 'react-router-redux';
 import resetEnhancer from './enhancer/reset.js';
 import { reducer as loadingReducer } from './components/loading';
-//import { reducer as sidebarReducer } from './components/sidebar';
+import { reducer as sidebarReducer } from './components/sidebar';
+import data from './components/sidebar/data';
 
 const originalReducers = {
   loading: loadingReducer,
-  //sidebar: sidebarReducer,
+  sidebar: sidebarReducer,
   routing: routerReducer
 };
 const reducer = combineReducers(originalReducers);
@@ -24,7 +25,7 @@ const storeEnhancers = compose(
   (win && win.devToolsExtension) ? win.devToolsExtension() : (f) => f
 );
 
-const initialState = {};
+const initialState = {sidebar: data};
 const store = createStore(reducer, initialState, storeEnhancers);
 store._reducers = originalReducers;
 export default store;
