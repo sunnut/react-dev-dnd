@@ -1,4 +1,4 @@
-## React Easy Start
+## React Dev Dnd
 A demo to develop the UI page just by drag & drop plugins。
 ## Installation
 ```
