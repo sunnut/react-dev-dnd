@@ -3,7 +3,7 @@ A demo to develop the UI page just by drag & drop plugins。
 ## Installation
 ```
 git clone https://github.com/sunnut/react-dev-dnd.git
-cd react-easy-start
+cd react-dev-dnd
 npm install
 npm run mock
 npm start
